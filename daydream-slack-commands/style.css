@@ -1,0 +1,189 @@
+
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+
+.background-gradient {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #f7b42c 0%, #fc575e 50%, #5f72bd 100%);
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+
+h1 {
+    color: #fc575e;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.2);
+}
+
+header {
+    z-index: 2;
+    position: relative;
+}
+
+
+.commands-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+
+.command-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px 0 rgba(92, 92, 255, 0.10), 0 1.5px 8px 0 rgba(252, 87, 94, 0.10);
+    padding: 2rem 2.5rem;
+    margin: 1rem 0;
+    min-width: 260px;
+    max-width: 340px;
+    flex: 1 1 260px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #f7b42c22;
+    position: relative;
+}
+.command-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(252, 87, 94, 0.18), 0 2px 12px 0 rgba(92, 92, 255, 0.12);
+}
+
+
+.command-title {
+    font-size: 1.3rem;
+    color: #5f72bd;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+
+.command-description {
+    color: #333;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.command-description a {
+    color: #fc575e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.command-description a:hover {
+    color: #f7b42c;
+    text-decoration: underline;
+}
+
+section#commands h2 {
+    text-align: center;
+    color: #5f72bd;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Info Section Styles */
+section#info {
+    margin-top: 3rem;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.info-card {
+    background: rgba(255,255,255,0.92);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px 0 rgba(95, 114, 189, 0.12), 0 1.5px 6px 0 rgba(247, 180, 44, 0.08);
+    padding: 2rem 2.5rem;
+    margin: 1rem 0;
+    min-width: 280px;
+    max-width: 360px;
+    flex: 1 1 280px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #5f72bd22;
+    position: relative;
+}
+
+.info-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 28px 0 rgba(95, 114, 189, 0.16), 0 2px 10px 0 rgba(247, 180, 44, 0.12);
+}
+
+.info-title {
+    font-size: 1.2rem;
+    color: #5f72bd;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.info-description {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.info-description ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.info-description li {
+    margin-bottom: 0.4rem;
+}
+
+.info-description a {
+    color: #fc575e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.info-description a:hover {
+    color: #f7b42c;
+    text-decoration: underline;
+}
+
+.status-online {
+    color: #28a745;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(90deg, #fc575e 0%, #f7b42c 100%);
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    margin-top: 3rem;
+    z-index: 2;
+    position: relative;
+}

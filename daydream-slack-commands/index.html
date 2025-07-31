@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daydream Slack Bot Commands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <header>
+        <h1>Daydream Slack Bot</h1>
+    </header>
+    <main>
+        <section id="commands">
+            <h2>Available Commands</h2>
+            <div class="commands-container">
+                <div class="command-card">
+                    <div class="command-title">/daydream-count</div>
+                    <div class="command-description">Get the current count of submissions. Returns a fun, random celebratory message with the count.</div>
+                </div>
+                <div class="command-card">
+                    <div class="command-title">/responses</div>
+                    <div class="command-description">Link to view daydream responses.<br><a href="https://app.fillout.com/editor/eNMLgBqrykus/results" target="_blank">View Responses</a></div>
+                </div>
+                <div class="command-card">
+                    <div class="command-title">/github</div>
+                    <div class="command-description">Link to the Daydream Adelaide GitHub repository.<br><a href="https://github.com/olii-dev/daydream-adelaide" target="_blank">GitHub Repo</a></div>
+                </div>
+                <div class="command-card">
+                    <div class="command-title">/days-until</div>
+                    <div class="command-description">Countdown to September 27th. Tells you how many days are left, with special messages for the day before and the day of!</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="info">
+            <div class="info-container">
+                <div class="info-card">
+                    <div class="info-title">🔐 Bot Permissions</div>
+                    <div class="info-description">
+                        <ul>
+                            <li>Read messages and slash commands</li>
+                            <li>Post messages in channels where invited</li>
+                            <li>Access to Fillout API for submission counts</li>
+                            <li>No access to private messages or DMs</li>
+                            <li>Cannot read message history before installation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-title">📋 Bot Version</div>
+                    <div class="info-description">
+                        <strong>Version:</strong> 1.2.0<br>
+                        <strong>Last Updated:</strong> July 2025<br>
+                        <strong>Framework:</strong> Slack Bolt for JavaScript<br>
+                        <strong>Status:</strong> <span class="status-online">🟢 Online</span>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-title">📞 Contact Info</div>
+                    <div class="info-description">
+                        <strong>Maintained by:</strong> Daydream Adelaide Team<br>
+                        <strong>GitHub:</strong> <a href="https://github.com/adldaydream" target="_blank">@adldaydream</a><br>
+                        <strong>Issues:</strong> <a href="https://github.com/adldaydream/daydream-bot/issues" target="_blank">Report bugs here</a><br>
+                        <strong>Questions:</strong> Ask in #daydream-adelaide channel
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Daydream Slack Bot</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
